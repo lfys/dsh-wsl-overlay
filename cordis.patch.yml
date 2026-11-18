@@ -1,0 +1,10 @@
+# Bundle patch for dsh-wsl-overlay.
+#
+# The host half publishes `wsl-<mode>` variants of the profile's own agent
+# presets and in-place wraps the host's terminal/session spawning, so the WSL
+# world is a preset choice (or an automatic one for UNC workspaces) rather
+# than a separate product. There is no browser half: this plugin injects no
+# client code in v1.
+- insert:
+    - id: dsh-wsl-overlay
+      name: 'dsh-wsl-overlay'
